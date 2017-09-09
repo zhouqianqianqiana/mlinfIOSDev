@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="../../css/common/framework7.ios.min.css" />
+		<link rel="stylesheet" href="../../css/common/iconfont.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<style>
+			.list-block{
+				margin:0;
+				font-size: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="views">
+			<div class="view view-main">
+				<div class="navbar">
+					<div class="navbar-inner navbar-on-center">
+						<div class="left" onclick="closeWin()">
+							<a href="#" class="back link">
+								<i class="iconfont icon-fenxiang"></i>
+								<span>返回</span>
+							</a>
+						</div>
+						<div class="center">语音播报</div>
+					</div>
+				</div>
+				<div class="pages navbar-through toolbar-through">
+					<div class="page">
+						<div class="page-content">
+							<div class="list-block" style="margin-top: 1em;">
+								<ul>
+									<li>
+										<div class="item-content">
+							              <div class="item-inner">
+							                <div class="item-title label">语音播报</div>
+							                <div class="item-input" style="
+							    text-align: right;
+							">
+							                  <label class="label-switch">
+							                    <input type="checkbox" name="switch">
+							                    <div class="checkbox"></div>
+							                  </label>
+							                </div>
+							              </div>
+							            </div>
+									</li>
+								</ul>
+							</div>
+							<div class="content-block-title" style="margin: 14px 15px 10px;">*开启后将播报您的收款等消息</div>
+							<div class="list-block">
+								<ul>
+									<li>
+										<div class="item-content">
+							              <div class="item-inner">
+							                <div class="item-title label">播报金额</div>
+							                <div class="item-input" style="
+							    text-align: right;
+							">
+							                  <label class="label-switch">
+							                    <input type="checkbox" name="switch">
+							                    <div class="checkbox"></div>
+							                  </label>
+							                </div>
+							              </div>
+							            </div>
+									</li>
+								</ul>
+							</div>
+							<div class="content-block-title" style="margin: 14px 15px 10px;">*开启后将播报您收到每笔金额的数目</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<script src="../../js/common/common.js"></script>
+	</body>
+</html>

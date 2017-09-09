@@ -1,0 +1,56 @@
+.header-content{
+				height:6.3em;
+				background: #223f68;
+				text-align: center;
+			}
+			.header-bg {
+				height: 2em;
+				background: url(../../image/me/account-bg.jpg) repeat-x bottom;
+				background-size: auto 100%; 
+			}
+			.header-content p:nth-of-type(1){
+				color: #ffae57;
+				font-family: sans-serif;
+			}
+			.header-content p:nth-of-type(1) span{
+				font-size: 2.1em;
+			}
+			.header-content p:nth-of-type(2){
+				color: #fff;
+				margin: 10px;
+			}
+			.account-title{
+				color: #888;
+				padding: 0 10px;
+				line-height: 1.5;
+				background: #fff;
+				overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			}
+			.item-content{
+				color: #888;
+				font-size: 14px;
+			}
+			.item-title-row{
+				color: #000;
+				font-size: 16px;
+			}
+			.all-account{
+				display: flex;
+				height: 2.4em;
+				line-height: 2.4em;
+				padding:0 10px;
+				color: #888;
+			}
+			.all-account a{
+				flex: 1;
+				text-align: right;
+				color: #576b95;
+			}
+			.list-block{
+				margin: 0;
+			}
+			.icon-dunpai{
+				color: #32ba3b;
+			}

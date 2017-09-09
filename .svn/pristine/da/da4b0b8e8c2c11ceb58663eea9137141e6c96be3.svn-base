@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>银行卡管理</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="../../css/common/framework7.ios.min.css" />
+		<link rel="stylesheet" href="../../css/common/iconfont.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<style>
+			.no-bank{
+				margin: 10em auto 0;
+				width: 8em;
+				text-align: center;
+				color: #cbc9c9;
+			}
+			.no-bank .icon-yinxingqia1{
+				font-size: 60px;
+			}
+			.bank-show{
+				position: relative;
+				width: 91%;
+				height: 6.25em;
+				padding:1em 10px;
+				box-sizing: border-box;
+				color: #fff;
+				background: url(../../image/bankIcon/bank-bg.png) no-repeat;
+				background-size: 100% 100%;
+				margin:1.125em auto 0;
+				box-shadow: 0 7px 24px #b2c7de;
+				border-radius: 7px;
+			}
+			.bank-title{
+				display: flex;
+				font-size: 16px;
+			}
+			.bank-img{
+				width: 1.5em;
+				height: 1.5em;
+				margin-right: 5px;
+			}
+			.bank-title span{
+				margin-left: 5px;
+				padding: 0 9px;
+				color: #000;
+				line-height: 20px;
+				font-size: 12px;
+				border-radius: 14px;
+				background:#f9f72c;
+				height: 18px;
+			}
+			.bank-num{
+				margin-top: .8em;
+				font-size: 15px;
+			}
+			.bank-hint{
+				margin-top: .8em;
+				color: #888;
+				text-align: right;
+				padding-right: 20px;
+				font-size: 12px;
+			}
+			.bank-show i{
+				position: absolute;
+				top: 5px;
+				right: 10px;
+				font-size: 50px;
+				opacity: .64;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="views">
+			<div class="view view-main">
+				<div class="navbar">
+					<div class="navbar-inner navbar-on-center">
+						<div class="left" onclick="closeWin()">
+							<a href="#" class="back link">
+								<i class="iconfont icon-fenxiang"></i>
+								<span>返回</span>
+							</a>
+						</div>
+						<div class="center">银行卡管理</div>
+						<div class="right" onclick="openWin('../me/bankHandle')">
+							<a href="#" class="link">添加</a>
+						</div>
+					</div>
+				</div>
+				<div class="pages navbar-through toolbar-through">
+					<div class="page">
+						<div class="page-content">
+							<!--暂未添加银行卡-->
+							<div class="no-bank" style="display: none;">
+								<i class="iconfont icon-yinxingqia1"></i>
+								<p>您暂未添加银行卡</p>
+							</div>
+							<!--认证通过的银行卡-->
+							<div class="bank-identity">
+								<div class="bank-show">
+									<i class="iconfont icon-shenheshibai"></i>
+									<!--<i class="iconfont icon-xiazai"></i>-->
+									<div class="bank-title"><img class="bank-img" src="../../image/bankIcon/gongshang.png" alt="" /><p>中国农业银行</p><span>已认证</span><!--<span>审核中</span>
+										<span style="background-color: #dedede;">审核失败</span>-->
+										
+									</div>
+									<p class="bank-num">6552 0339 **** 982099</p>
+								</div>
+								<!--审核失败-->
+								<p class="bank-hint"><a href="tel:123456;"></a>如有改动请联系客服</p>
+								<!--审核中-->
+								<!--<p class="bank-hint">您提现的金额将默认打到该卡</p>-->
+								<!--已认证-->
+								<!--<p class="bank-hint">您提现的金额将默认打到已认证的卡中</p>-->
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<script src="../../js/common/common.js"></script>
+	</body>
+</html>

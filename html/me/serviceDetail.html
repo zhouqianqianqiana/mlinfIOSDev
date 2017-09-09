@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="../../css/common/framework7.ios.min.css" />
+		<link rel="stylesheet" href="../../css/common/iconfont.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/me/service.css" />
+		<style>
+			.content-title{
+				font-size: 16px;
+				color: #000;
+				line-height: 2;
+			}
+			.content-block-inner p{
+				color: #888;
+			}
+			.content-block{
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="views" id="app">
+			<div class="view view-main">
+				<div class="navbar">
+					<div class="navbar-inner navbar-on-center">
+						<div class="left" onclick="closeWin()">
+    						<a class="back link" >
+    							<i class="iconfont icon-fenxiang"></i>
+    							<span>返回</span>
+    						</a>
+    					</div>
+    					<div class="center">问题详情</div>
+					</div>
+				</div>
+				<div class="pages navbar-through toolbar-through">
+					<div class="page">
+						<div class="page-content">
+							<div class="content-block">
+								
+								<div class="content-block-inner">
+									<div class="content-title">{{question}}</div>
+						          <p>{{answer}}
+						          </p>
+						        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+	<script src="../../js/common/common.js"></script>
+	<script src="../../js/common/vue.js"></script>
+	<script>
+		var service = [{'question': '一般提现多久到账？','answer': '答：尊敬的商户，提现余额将在2至5个工作日之内转入您绑定美邻共享账户的银行卡中，届时我们将暂时冻结您转出的金额。如果您银行卡信息中有误，请您及时联系我们的工作人员或自行更改银行卡信息，以防打款失败等不必要的麻烦。感谢您的支持，美邻共享祝您生活愉快！'},{
+		'question': '会员推送次数能不能购买？','answer': '答：尊敬的商户，推送功能前期默认只能推送2条，如果您需要更多的条数，请您联系您的大区经理或美邻共享的工作人员进行咨询。我们会依据您所缴纳的保证金来增加相应的次数。感谢您的支持，美邻共享祝您生活愉快！'	
+		},{
+		'question': '异业推广广告条数能否充值？','answer': '答：尊敬的商户，如果需要条数或者全屏广告全商家覆盖推送等功能，请您联系您的大区经理或美邻共享的工作人员进行咨询。我们会依据您所缴纳的保证金来增加相应的权限。感谢您的支持，美邻共享祝您生活愉快！'	
+		},{
+		'question': '店铺信息如有更换怎么办？','answer': '尊敬的商户，如果需要更换店铺地址，电话号码等基础信息，请您联系我们的工作人员重新审核资料后进行更改，感谢您的支持，美邻共享祝您生活愉快！'	
+		},{
+		'question': '我的资金在美邻共享安全吗？','answer': '尊敬的商户，请您放心使用美邻共享的各种功能，我们24小时都有技术员保护您的账户安全，使您的账户不会遭受黑客的攻击或各方面的遗漏。感谢您的支持，美邻共享祝您生活愉快！'	
+		},{
+		'question': '如果我有其他问题在哪儿反馈给你们？','answer': '尊敬的商户，如果您有问题或更好的建议，您可以直接反馈给大区经理或者加入美邻共享官方认证商家QQ群****或官方微信群里进行直接反馈，我们会有技术人员为您解答问题或收取您的意见。美邻共享祝您生活愉快！'	
+		}];
+		
+		var app = new Vue({
+			el: "#app",
+			data: {
+				question: '',
+				answer: ''
+			}
+		})
+		apiready = function () {
+			var answerNum = api.pageParam.answer;
+			app.question = service[answerNum]['question'];
+			app.answer = service[answerNum]['answer'];
+		}
+	</script>
+</html>

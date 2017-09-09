@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员管理</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="../../css/common/framework7.ios.min.css" />
+		<link rel="stylesheet" href="../../css/common/iconfont.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<script src="https://a.alipayobjects.com/g/datavis/g2-mobile-all/2.1.22/index.js"></script>
+		<style>
+			.vip-charts{
+				background:#fff;
+				width:100%;
+				margin:0 auto;
+			}
+			.vip-charts p{
+				padding:10px 10px 0;
+				text-align: right;
+			}
+			.vip-charts p:nth-of-type(2) {
+				color: #6a7fa5;
+			}
+			.vip-link{
+				display: flex;
+				text-align: center;
+			}
+			.vip-link div{
+				font-size: 14px;
+			}
+			.vip-link .iconfont{
+				color: #fff;
+				border-radius: 5px;
+				font-size: 28px;
+				padding:5px;
+			}
+			.list-block{
+				padding:10px;
+				background: #fff;
+				border-top: 1px solid #e5e5e5;
+				border-bottom: 1px solid #e5e5e5;
+			}
+			.icon-huiyuan{
+				background: #eb7120;
+			}
+			.icon-tuiguang{
+				background: #20a1eb;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="views">
+			<div class="view view-main">
+				<div class="navbar">
+					<div class="navbar-inner navbar-on-center">
+						<div class="left" onclick="closeWin()">
+							<a href="#" class="back link">
+								<i class="iconfont icon-fenxiang"></i>
+								<span>返回</span>
+							</a>
+						</div>
+						<div class="center">会员管理</div>
+						
+					</div>
+				</div>
+				<div class="pages navbar-through toolbar-through">
+					<div class="page">
+						<div class="page-content">
+							<div class="vip-charts">
+								<p>本月新增会员： 23</p>
+								<p>总会员： 23</p>
+								
+						    	<canvas id="vip" style="width:100%;height:218px;"></canvas>
+						    </div>
+							<div class="list-block">
+								<div class="vip-link">
+									<div>
+										<i class="iconfont icon-huiyuan"></i>
+										<p>本店会员</p>
+									</div>
+									<div style="margin-left: 20px;">
+										<i class="iconfont icon-tuiguang"></i>
+										<p>会员推广</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	<script src="../../js/common/common.js"></script>
+	<script>
+	var a = 10;
+	    GM.Global.pixelRatio = 2;
+		GM.Global.colors = ["#f37b2b"];
+      var data = [
+        {"number":a,"month":"1"},
+        {"number":4,"month":"2"},
+        {"number":3,"month":"3"},
+        {"number":10,"month":"4"},
+        {"number":4,"month":"5"},
+        {"number":3,"month":"6"},
+        {"number":10,"month":"7"},
+        {"number":4,"month":"8"},
+        {"number":3,"month":"9"},
+        {"number":90,"month":"10"},
+        {"number":4,"month":"11"},
+        {"number":3,"month":"12"}
+      ];
+      var chart = new GM.Chart({
+        id: 'vip'
+      });
+      chart.source(data, {
+        tem: {
+          tickCount: 5
+        }
+      });
+      //配置刻度文字大小，供PC端显示用(移动端可以使用默认值20px)
+      chart.axis('month', {
+        label:{
+        	
+          fontSize: 12 
+        },
+        "line": {
+        	"stroke":"#fff",
+        "lineWidth":1
+        },
+        grid: null
+      });
+      chart.axis('number', {
+        label:{
+          fontSize: 12 
+        }
+      });
+       
+      chart.interval().position('month*number').color('month');
+      chart.render();
+      
+    </script>
+	</body>
+</html>

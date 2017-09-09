@@ -1,0 +1,21 @@
+.Qrcode{
+	padding: 2em 3.3em 0;
+	text-align: center;
+}
+.Qrcode img{
+	width: 100%;
+	display: block;
+}
+.button{
+	margin: 2.75em auto;
+	width: 90%;
+	height: 46px;
+	line-height: 2.556;
+	font-size: 18px;
+	background: #09bb07;
+	border: 0;
+	color: #fff;
+}
+.toolbar-through .page-content{
+	padding-bottom: 0;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>店铺二维码</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="../../css/common/framework7.ios.min.css" />
+		<link rel="stylesheet" href="../../css/common/iconfont.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/code/code.css" />
+	</head>
+	<body>
+		<div class="views">
+			<div class="view view-main">
+				<div class="navbar">
+           		 	<div class="navbar-inner navbar-on-center">
+    					<div class="left" onclick="closeWin()">
+    						<a class="back link" >
+    							<i class="iconfont icon-fenxiang"></i>
+    							<span>返回</span>
+    						</a>
+    					</div>
+    					<div class="center">店铺二维码</div>
+    					<div class="right">
+    						<a href="#" class="">
+    							<!--<i class="icon icon-bars"></i>-->
+    						</a>
+    					</div>
+  					</div>
+          		</div>
+				<div class="pages navbar-through toolbar-through">
+					<div data-page="index" class="page">
+						<div class="page-content">
+							<div class="Qrcode">
+								<img src="../../image/mer_03.jpg" alt="" />
+								
+							</div>
+							<a href="#" class="button">保存图片</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/common/common.js"></script>
+</html>

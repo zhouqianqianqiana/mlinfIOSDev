@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Hello APP</title>
+    <style>
+    *{
+    	margin: 0;
+    	padding:0;
+    }
+    body,html{
+    	height: 100%;
+    	background: #fff;
+    }
+    </style>
+</head>
+<body>
+	<div class="box">
+    <a href="#" id="home">打开首页</a>
+    </div>
+    	
+</body>
+<script>
+	document.getElementById('home').onclick = function () {
+		api.openWin({
+	        name: 'home',
+	        url: 'html/home/home.html',
+	        animation:{
+			    type:"left"             //动画过渡时间，默认300毫秒
+			}
+        });
+	}
+</script>
+</html>

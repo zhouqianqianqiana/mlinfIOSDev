@@ -1,0 +1,112 @@
+html,body{
+	height: 100%;
+	background: #f7f7f7;
+}
+p{
+	margin: 0;
+}
+.back span{
+	font-size: 16px;
+}
+.navbar .center{
+	margin:0 auto;
+}
+.right{
+	position: absolute;
+	right: 10px;
+}
+.navbar .left{
+	position: absolute;
+	left:10px;
+}
+.navbar a.link i+span{
+	margin-left: 0;
+}
+.views .navbar:after{
+	background: none;
+}
+.tab-link{
+	flex: 1;
+	text-align: center;
+	font-size: 12px;
+}
+.iconfont{
+	font-size: 20px;
+}
+.icon .badge{
+	left: 63%;
+	top: 2px;
+	height: 8px;
+	min-width: 8px;
+	
+}
+.bg-red{
+	background: #ff3b30;
+}
+.tab-link a.active{
+	color: #f69746;
+}
+.tab-link{
+	color: #888;
+}
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: #223f68;
+	height: 2.8em;
+	line-height: 2.8em;
+	text-align: center;
+	font-size: 1.1em;
+	color: #fff;
+	
+}
+footer{
+	position: fixed;
+    bottom: 0;
+    border-top: 1px solid #ecebeb;
+    width: 100%;
+    background-color: #fff;
+    padding: .46em 0 .3em;
+    font-size: .8em;
+}
+footer .box{
+	display: flex;
+}
+footer .box div{
+	
+	flex: 1;
+	text-align: center;
+}
+footer img{
+	width: 1.6em;
+}
+footer .box div p:nth-of-type(1){
+	position: relative;
+}
+.redDot{
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	display: block;
+	background: #f6431a;
+	border-radius: 50%;
+	top: 0;
+	right: 40%;
+}
+.navbar{
+    	background: #223f68;
+    	text-align: center;
+    	color: #fff;
+    	line-height: 44px;
+    }
+.navbar a{
+	color: #fff;
+}
+.subnavbar{
+	background: #223f68;
+}
+.button.active{
+	background: #fff;
+	color: #000;
+}

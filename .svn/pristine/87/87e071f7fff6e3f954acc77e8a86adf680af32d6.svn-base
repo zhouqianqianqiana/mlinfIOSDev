@@ -1,0 +1,79 @@
+
+    .func-list{
+	display: flex;
+	height: 6.5em;
+	background: #223f68 url(../../image/home/home-bg.jpg) no-repeat bottom;
+	background-size: 100% auto;
+}
+.func-list div{
+	margin-top: 1.25em;
+	flex: 1;
+	text-align: center;
+	color: #fff;
+}
+.func-list img{
+	height: 2.4em;
+}
+.order-list{
+	display: flex;
+	background: #fff;
+	margin-bottom: .625em;
+}
+.order-list div{
+	position: relative;
+	flex: 1;
+	padding: .68em 0;
+	text-align: center;
+	overflow: hidden;
+}
+.order-list div:after{
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 1.5em;
+	border-left: 1px solid #e5e5e5;
+	right: 0;
+	top: 40%;
+}
+.order-list div:last-of-type:after{
+	border: none;
+}
+.order-list div p:first-of-type{
+	color: #888;
+	
+}
+.order-list div p{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.items{
+	display: flex;
+	background: #fff;
+}
+.item{
+	flex: 1;
+	display: flex;
+	padding-left: 10px;
+	margin-top: .9em;
+	margin-bottom: .9em;
+	justify-content: normal;
+	-webkit-justify-content: normal;
+}
+.item img{
+	width: 2.75em;
+	height: 2.75em;
+	display: block;
+	margin-right: 5px;
+}
+.item span{
+	display: block;
+}
+.item span:nth-of-type(2){
+	font-size: 12px;
+	font-family: sans-serif;
+	color: #888;
+}
+p{
+	margin:0;
+}

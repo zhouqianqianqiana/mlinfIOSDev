@@ -1,0 +1,96 @@
+.media-list{
+	margin: 0;
+	background: #223f68;
+	color:#fff;
+}
+
+.item-media{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background: url(../../image/home/fin-detail.jpg) no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	border: 2px solid #f7d8b8;
+}
+.list-block ul:before{
+	background: none;
+}
+.list-block ul:after{
+	background: none;
+}
+html:not(.watch-active-state) .media-list .item-link:active{
+	background-color: #1c3456;
+}
+.item-media:after{
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: -4px;
+	left: -4px;
+	border-radius: 50%;
+	border: 2px solid #f7e2ce;
+	opacity: .23;
+}
+.merchant-level{
+	padding: 2px 8px;
+	font-size: 12px;
+	background: #f89a46;
+	font-style: italic;
+	border-radius: 9px;
+	color: #000;
+}
+.item-subtitle{
+	font-size: 13px;
+	color: #b2b2b2;
+	font-family: sans-serif;
+}
+.item-title{
+	font-size: 15px;
+}
+ .list-block.media-list .item-link .item-title-row{
+ 	background: none;
+ }
+#view-3 .media-list .item-inner:after{
+	background: none;
+	content: " ";
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-width: 2px 2px 0 0;
+    border-color: #fff;
+    left: auto;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 20px;
+}
+.list-block .item-inner:after{
+	background: none;
+}
+.safe-span{
+	padding:1px 6px;
+	color:#1da91d;
+	border:1px solid #1da91d;
+	border-radius: 9px;
+	font-size: 12px;
+}
+.acount-money{
+	font-family: sans-serif;
+	font-size: 23px;
+}
+.list-block{
+	margin: 0;
+}
+.item-content{
+	border-bottom: 1px solid #e5e5e5;
+}
+.margin-top30{
+	margin-top: 30px;
+}

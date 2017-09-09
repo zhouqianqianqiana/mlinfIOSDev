@@ -1,0 +1,71 @@
+.subnavbar{
+	background:#fff;
+	color: #000;
+	padding:0;
+}
+.button{
+	height: 44px;
+	line-height: 44px;
+	font-size: 14px;
+	padding:0;
+}
+a.button{
+	color: #000;
+	border: none;
+}
+.buttons-row .button:first-child{
+	border-left: 0;
+}
+.button.active{
+	color: #0c92f3;
+	border-bottom: 2px solid #0c92f3;
+}
+.button{
+	margin: 0 10px;
+}
+.buttons-row .button:first-child{
+	border-radius: 0;
+}
+.list-block{
+	padding:0 1em; 
+}
+.list-block .item-subtitle,.list-block .item-text{
+	font-size: 13px;
+	height: auto;
+}
+.list-block .item-subtitle{
+	color: #09bb07;
+	font-size: 16px;
+}
+html.ios-gt-8 .list-block.media-list .item-title{
+	font-size: 16px;
+	font-weight: normal;
+	font-style: normal;
+}
+.list-block .item-inner{
+	padding-right: 5px;
+}
+.list-block ul{
+	background: transparent;
+}
+.list-block li{
+	margin-bottom: 1em;
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-radius: 5px;
+	box-shadow: 0 7px 24px #ededed;
+}
+.list-block .item-inner:after{
+	background: none;
+}
+.list-block .item-after{
+	text-decoration: underline;
+	color: #0c92f3;
+	font-size: 13px;
+}
+.list-block .item-after:active{
+	color: #0f69aa;
+}
+#tab3 .list-block,#tab3 .item-subtitle{
+	color: #b2b2b2;
+}

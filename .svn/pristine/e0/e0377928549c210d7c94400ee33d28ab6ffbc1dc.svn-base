@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>消息</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="../../css/common/framework7.ios.min.css" />
+		<link rel="stylesheet" href="../../css/common/iconfont.css" />
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<style>
+			.button{
+				border: 1px solid #fff;
+			}
+			.pay-title{
+				padding:0 10px;
+				display: flex;
+				border-bottom: 1px solid #e5e5e5;
+				line-height: 2;
+			}
+			.page-content{
+				font-family: sans-serif;
+			}
+			.pay-title p:nth-of-type(1){
+				flex: 1;
+				color: #888;
+			}
+			.pay-title p:nth-of-type(2){
+				margin-right: 5px;
+				color: #888;
+			}
+			.color-black{
+				color: #000;
+			}
+			.pay-item{
+				padding: 0 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="views">
+			<div class="view view-main">
+				<div class="navbar">
+           		 	<div class="navbar-inner navbar-on-center">
+    					<div class="left">
+    						<a class="back link" >
+    							
+    						</a>
+    					</div>
+    					<div class="center">消息</div>
+    					<div class="right">
+    						<a href="#" class="" style="font-size: 15px;">
+    							筛选
+    							<!--<i class="icon icon-bars"></i>-->
+    						</a>
+    					</div>
+    					<div class="subnavbar sliding" style="transform: translate3d(0px, 0px, 0px);">
+      						<div class="buttons-row">
+      							<a href="#" class="button active">付款消息</a>
+      							<a href="#" class="button">提现消息</a>
+      							<a href="#" class="button">系统消息</a>
+      						</div>
+    					</div>
+  					</div>
+          		</div>
+				<div class="pages navbar-through toolbar-through">
+					<div data-page="index" class="page">
+						<div class="page-content with-subnavbar hide-bars-on-scroll">
+							<div class="pay-list">
+								<div class="pay-title"><p>今天</p><p>共<span class="color-black">980</span>笔</p><p>￥849384.00</p></div>
+								<div class="pay-item">
+									
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				 <!-- Bottom Toolbar-->
+		          <div class="toolbar">
+		            <div class="toolbar-inner">
+		              <!-- Toolbar links -->
+		              <a href="#tab-1" class="tab-link ">
+		              	<i class="iconfont icon-zhuye"></i>
+		              	<p>首页</p>
+		              </a>
+		              <a href="#tab-2" class="tab-link active">
+		              	<i class="iconfont icon icon-xiaoxi "><span class="badge bg-red"></span></i>
+		              	<p>消息</p>
+		              </a>
+		              <a href="#tab-4" class="tab-link ">
+		              	<i class="iconfont icon-wode"></i>
+		              	<p>我的</p>
+		              </a>
+		            </div>
+		          </div>
+			</div>
+		</div>
+	</body>
+</html>

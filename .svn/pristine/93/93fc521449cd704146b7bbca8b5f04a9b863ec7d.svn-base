@@ -1,0 +1,77 @@
+.button{
+	border: 1px solid #fff;
+}
+.pay-title{
+	padding:0 10px;
+	display: flex;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	line-height: 2;
+}
+#tab3 .icon-shouji{
+	color: #48abf8;
+}
+.page-content{
+	font-family: sans-serif;
+}
+.pay-title p:nth-of-type(1){
+	flex: 1;
+	color: #888;
+}
+.pay-title p:nth-of-type(2){
+	margin-right: 5px;
+	color: #888;
+}
+.color-black{
+	color: #000;
+}
+.pay-item{
+	padding: 5px 0 0 2.5em;
+	color: #888;
+	background: #fff;
+	font-size: 13px;
+}
+.pay-item p:nth-of-type(1){
+	position: relative;
+	color: #000;
+	font-size: 16px;
+}			
+.pay-item p:nth-of-type(1) i, .pay-item p:nth-of-type(1) span{
+	position: absolute;
+}			
+.pay-item p:nth-of-type(1) i{
+	left: -23px;
+	color: #21c521;
+}	
+.pay-item p:nth-of-type(1) .hui{
+	padding: 0 2px;
+	margin: 3px 0 0 3px;
+	background: #21c521;
+	border-radius: 2px;
+	font-size: 12px;
+	color: #fff;
+}
+.pay-item p:nth-of-type(1) .expence{
+	right: 10px;
+}			
+.pay-item p:nth-of-type(3)	span:nth-of-type(2){
+	margin-left: 10px;
+}		
+.pay-item p:nth-of-type(3){
+	position: relative;
+}
+.pay-item p:nth-of-type(3) .reduce{
+	position: absolute;
+	right: 10px;
+	color: #f0572e;
+}			
+.pay-list .pay-item p:last-of-type{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e5e5e5;
+}
+#tab3 .pay-list .pay-item p:last-of-type{
+	padding-bottom: 15px;
+}
+.pay-list .pay-item:last-of-type p:last-of-type{
+	border: none;
+}	

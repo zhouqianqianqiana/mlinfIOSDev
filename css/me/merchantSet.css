@@ -1,0 +1,60 @@
+.merchant-header-img{
+	width: 3.37em;
+	height: 3.37em;
+	background-image: url(../../image/me/mlinf-logo.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.list-block{
+	border-top: 1px solid #e5e5e5;
+	background: #fff;
+	font-size: 15px;
+}
+.no-margin{
+	margin: 0;
+}
+.list-item{
+	padding:8px 10px;
+	display: flex;
+	border-bottom: 1px solid #e5e5e5;
+	
+}
+.list-block .item-title{
+	flex: 1;
+	overflow: visible;
+	min-width: auto;
+}
+.item-right{
+	margin-left: 5px;
+	border-radius: 10px;
+	color:#999;
+	font-size: 14px;
+	line-height: 1.6;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.no-padding{
+	padding:0;
+}
+.weui-cell__ft{
+	position: relative;
+	padding-right: 13px;
+}
+.weui-cell__ft:after{
+	    content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 2px;
+}

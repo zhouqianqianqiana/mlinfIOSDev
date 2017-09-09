@@ -1,0 +1,6 @@
+.content-block-title{
+	margin:13px 15px;
+}
+.item-content{
+	font-size: 15px;
+}

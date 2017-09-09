@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>title</title>
+    <link rel="stylesheet" href="../../css/common/iconfont.css" />
+    <link rel="stylesheet" href="../../css/common/framework7.ios.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
+    <link rel="stylesheet" href="../../css/home/home.css" />
+</head>
+<body>
+	
+      <!-- Views -->
+      <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+          <!-- Top Navbar-->
+          <div class="navbar">
+           		 繁荣干杂
+          </div>
+          <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+          <div class="pages navbar-through toolbar-through">
+            <!-- Page, "data-page" contains page name -->
+            <div data-page="index" class="page">
+              <!-- Scrollable page content -->
+              <div class="page-content">
+                <section>
+				    <div class="func-list">
+				    	<div onclick="openWin('../QRcode/Qrcode')"><img src="../../image/home/code.png" alt="" /><p>店铺二维码</p></div>
+				    	<div><img src="../../image/home/finance.png" alt="" /><p>财务统计</p></div>
+				    	<div><img src="../../image/home/yiye.png" alt="" /><p>异业推广</p></div>
+				    </div>
+				    <div class="order-list">
+				    	<div><p>今日收益</p><p>0</p></div>
+				    	<div><p>今日单量</p><p>0</p></div>
+				    	<div><p>本月收益</p><p>0</p></div>
+				    </div>
+				    <div class="function">
+				    	<div class="items">
+				    		<div class="item">
+			    				<img src="../../image/home/preferential.jpg">
+			    				<p><span>优惠券管理</span><span>发放优惠 拉新客户</span></p>
+				    		</div>
+				    		<div class="item">
+			    				<img src="../../image/home/merchantShop.jpg">
+			    				<p><span>店铺设置</span><span>设置店铺 轻松开店</span></p>
+				    		</div>
+				    	</div>
+				    	<div class="items">
+				    		<div class="item">
+			    				<img src="../../image/home/myVip.jpg">
+			    				<p><span>会员管理</span><span>会员推送 回头客多</span></p>
+				    		</div>
+				    		<div class="item">
+			    				<img src="../../image/home/fin-detail.jpg">
+			    				<p><span>账户明细</span><span>账户变化 一清二楚</span></p>
+				    		</div>
+				    	</div>
+				    </div>
+				</section>
+              </div>
+            </div>
+         </div>
+          <!-- Bottom Toolbar-->
+          <div class="toolbar">
+            <div class="toolbar-inner">
+              <!-- Toolbar links -->
+              <a href="#tab-1" class="tab-link active">
+              	<i class="iconfont icon-zhuye"></i>
+              	<p>首页</p>
+              </a>
+              <a href="#tab-2" class="tab-link ">
+              	<i class="iconfont icon icon-xiaoxi "><span class="badge bg-red"></span></i>
+              	<p>消息</p>
+              </a>
+              <a href="#tab-4" class="tab-link ">
+              	<i class="iconfont icon-wode"></i>
+              	<p>我的</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script type="text/javascript" src="../../js/common/common.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+		
+	};
+</script>
+</html>

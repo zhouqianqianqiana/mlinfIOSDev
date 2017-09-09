@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>My App</title>
+		<!-- Path to Framework7 Library CSS-->
+		<link rel="stylesheet" href="../../css/common/framework7.ios.min.css">
+		<link rel="stylesheet" href="../../css/common/iconfont.css" />
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="../../css/common/common.css" />
+		<link rel="stylesheet" href="../../css/home/home.css">
+		<link rel="stylesheet" href="../../css/me/me.css" />
+		<link rel="stylesheet" href="../../css/message/message.css" />
+		<style>
+		.nav-tabs .tab.active{
+			display: block;
+		}
+		.nav-tabs .tab{
+			display: none;
+		}
+		</style>
+	</head>
+
+	<body>
+		<!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+		<div class="views tabs toolbar-through">
+			<!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+			<div id="tab-1" class="view view-main tab active" data-page="index-1">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="center sliding">繁荣干杂</div>
+					</div>
+				</div>
+				<div class="pages navbar-through">
+					<div data-page="index-1" class="page">
+						<div class="page-content">
+							<section>
+								<div class="func-list">
+									<div onclick="openWin('../QRcode/Qrcode')"><img src="../../image/home/code.png" alt="" />
+										<p>店铺二维码</p>
+									</div>
+									<div><img src="../../image/home/finance.png" alt="" />
+										<p>财务统计</p>
+									</div>
+									<div><img src="../../image/home/yiye.png" alt="" />
+										<p>异业推广</p>
+									</div>
+								</div>
+								<div class="order-list">
+									<div>
+										<p>今日收益</p>
+										<p>0</p>
+									</div>
+									<div>
+										<p>今日单量</p>
+										<p>0</p>
+									</div>
+									<div>
+										<p>本月收益</p>
+										<p>0</p>
+									</div>
+								</div>
+								<div class="function">
+									<div class="items">
+										<div class="item" onclick="openWin('../couponManage/couponList')">
+											<img src="../../image/home/preferential.jpg">
+											<p><span>优惠券管理</span><span>发放优惠 拉新客户</span></p>
+										</div>
+										<div class="item">
+											<img src="../../image/home/merchantShop.jpg">
+											<p><span>店铺设置</span><span>设置店铺 轻松开店</span></p>
+										</div>
+									</div>
+									<div class="items">
+										<div class="item" onclick="openWin('../home/vipManage')">
+											<img src="../../image/home/myVip.jpg">
+											<p><span>会员管理</span><span>会员推送 回头客多</span></p>
+										</div>
+										<div class="item" onclick="openWin('../home/accountDetail')">
+											<img src="../../image/home/fin-detail.jpg">
+											<p><span>账户明细</span><span>账户变化 一清二楚</span></p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Second view (for second wrap)-->
+			<div id="tab-2" class="view tab active" data-page="index-2">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="center sliding">消息</div>
+						<div class="subnavbar sliding">
+      						<div class="buttons-row">
+      							<a href="#tab1" class="button tab-link active">付款消息</a>
+      							<a href="#tab2" class="button tab-link ">提现消息</a>
+      							<a href="#tab3" class="button tab-link">系统消息</a>
+      						</div>
+    					</div>
+					</div>
+				</div>
+				
+				<div class="pages navbar-through toolbar-through">
+					<div class="page with-subnavbar page-on-center">
+						<div class="tabs-swipeable-wrap swiper-container swiper-container-horizontal">
+							<div class="tabs swiper-wrapper">
+								<div id="tab1" class="page-content tab swiper-slide active">
+									<div class="pay-list">
+					            	<div class="pay-title"><p>今天</p><p>共<span class="color-black">123</span>笔</p><p><span class="color-black">￥123.0</span></p></div>
+									<div class="pay-item">
+										<p><i class="iconfont icon-wancheng"></i>付款成功<span class="hui" >惠</span><span class="expence">￥189.0</span></p>
+										<p>兵哥 12:03:37</p>
+										<p><span>付款金额：￥189.0</span><span>扣点金额：￥0.0</span><span class="reduce">-￥98.0</span></p>
+									</div>
+									<div class="pay-item">
+										<p><i class="iconfont icon-shuoming"></i>付款成功<span class="hui" >惠</span><span class="expence">￥189.0</span></p>
+										<p>兵哥 12:03:37</p>
+										<p><span>付款金额：￥189.0</span><span>扣点金额：￥0.0</span><span class="reduce">-￥98.0</span></p>
+									</div>
+								</div>
+								<div class="pay-list">
+					            	<div class="pay-title"><p>今天</p><p>共<span class="color-black">123</span>笔</p><p><span class="color-black">￥123.0</span></p></div>
+									<div class="pay-item">
+										<p><i class="iconfont icon-wancheng"></i>付款成功<span class="hui" >惠</span><span class="expence">￥189.0</span></p>
+										<p>兵哥 12:03:37</p>
+										<p><span>付款金额：￥189.0</span><span>扣点金额：￥0.0</span><span class="reduce">-￥98.0</span></p>
+									</div>
+									<div class="pay-item">
+										<p><i class="iconfont icon-shuoming"></i>付款成功<span class="hui" >惠</span><span class="expence">￥189.0</span></p>
+										<p>兵哥 12:03:37</p>
+										<p><span>付款金额：￥189.0</span><span>扣点金额：￥0.0</span><span class="reduce">-￥98.0</span></p>
+									</div>
+								</div>
+								</div>
+								<div id="tab2" class="page-content tab swiper-slide ">
+									<div class="pay-list">
+									<div class="pay-item">
+										<p><i class="iconfont icon-wancheng"></i>提现成功</p>
+										<p>中国银行 12：03:35</p>
+										<p>12334355 656 5757 767</p>
+									</div>
+									<div class="pay-item">
+										<p><i class="iconfont icon-shuoming"></i>提现成功</p>
+										<p>中国银行 12：03:35</p>
+										<p>12334355 656 5757 767</p>
+									</div>
+									<div class="pay-item">
+										<p><i class="iconfont icon-shuoming"></i>提现成功</p>
+										<p>中国银行 12：03:35</p>
+										<p>12334355 656 5757 767</p>
+									</div>
+								</div>
+								</div>
+								<div id="tab3" class="page-content tab swiper-slide ">
+									<div class="pay-list">
+									<div class="pay-item">
+										<p><i class="iconfont icon-shouji"></i>系统消息</p>
+										<p>美邻管理员 12:03:34</p>
+										<p>您的资料审核失败，请您重新尝试提交资料进行审核。失败原因：银行卡照片不符合规范。</p>
+									</div>
+									<div class="pay-item">
+										<p><i class="iconfont icon-shouji"></i>系统消息</p>
+										<p>美邻管理员 12:03:34</p>
+										<p>您的资料审核失败，请您重新尝试提交资料进行审核。失败原因：银行卡照片不符合规范。</p>
+									</div>
+									<div class="pay-item">
+										<p><i class="iconfont icon-shouji"></i>系统消息</p>
+										<p>美邻管理员 12:03:34</p>
+										<p>您的资料审核失败，请您重新尝试提交资料进行审核。失败原因：银行卡照片不符合规范。</p>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="tab-3" class="view tab" data-page="index-3">
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="center sliding">我的</div>
+						<div class="right">
+    						<a href="#" class="screen" style="font-size: 15px;">
+    							检查更新
+    						</a>
+    					</div>
+					</div>
+				</div>
+				<div class="pages navbar-through toolbar-through">
+					<div class="page">
+						<div class="page-content">
+							<div class="list-block media-list">
+								<a href="#" onclick="openWin('../me/merchantSet')" class="item-link item-content">
+									<div class="item-media">
+									</div>
+									<div class="item-inner">
+										<div class="item-title-row">
+											<div class="item-title">如意干杂</div>
+										</div>
+										<span class="merchant-level">A类商家</span>
+										<div class="item-subtitle">189 8902 9982</div>
+									</div>
+								</a>
+							</div>
+							<div class="list-block">
+								<ul>
+									<li>
+										<a href="#" onclick="openWin('../me/accountBalance')" class="item-link item-content">
+											<div class="item-inner">
+												<div class="item-title">账户余额（元）
+													<span class="safe-span">账户安全保障中</span>
+													<div class="acount-balance">￥
+														<span class="acount-money">1234.00</span>
+													</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#" onclick="openWin('../me/bankManage')" class="item-link item-content">
+											<div class="item-inner">
+												<div class="item-title">银行卡管理
+
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="list-block margin-top30">
+								<ul>
+									<li style="border-top: 1px solid #e5e5e5;">
+										<a href="#" onclick="openWin('../me/voiceSet')" class="item-link item-content">
+											<div class="item-inner">
+												<div class="item-title">语音播报</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;" onclick="openWin('../me/service')" class="item-link item-content">
+											<div class="item-inner">
+												<div class="item-title">客户中心</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Bottom Tabbar-->
+			<div class="toolbar tabbar tabbar-labels">
+				<div class="toolbar-inner">
+					<!-- Toolbar links -->
+					<a href="#tab-1" class="tab-link active">
+						<i class="iconfont icon-zhuye"></i>
+						<p>首页</p>
+					</a>
+					<a href="#tab-2" class="tab-link ">
+						<i class="iconfont icon icon-xiaoxi "><span class="badge bg-red"></span></i>
+						<p>消息</p>
+					</a>
+					<a href="#tab-3" class="tab-link ">
+						<i class="iconfont icon-wode"></i>
+						<p>我的</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="../../js/common/framework7.js"></script>
+		<!-- Path to your app js-->
+		<script type="text/javascript">
+			// Initialize your app
+			var myApp = new Framework7();
+
+			// Export selectors engine
+			var $$ = Dom7;
+
+			// Add views
+//			var view1 = myApp.addView('#tab-1');
+//			var view2 = myApp.addView('#tab-2');
+//			var view3 = myApp.addView('#tab-3');
+		</script>
+	</body>
+
+</html>

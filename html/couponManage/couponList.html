@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>优惠券管理</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="../../css/common/iconfont.css" />
+	    <link rel="stylesheet" href="../../css/common/framework7.ios.min.css" />
+	    <link rel="stylesheet" type="text/css" href="../../css/common/common.css"/>
+	    <link rel="stylesheet" href="../../css/couponManage/couponList.css" />
+	</head>
+	<body>
+		<div class="views">
+			<div class="view view-main">
+				<div class="navbar">
+					<div class="navbar-inner navbar-on-center">
+						<div class="left" onclick="closeWin()">
+							<a href="#" class="back link">
+								<i class="iconfont icon-fenxiang"></i>
+								<span>返回</span>
+							</a>
+						</div>
+						<div class="center">优惠券管理</div>
+						<div class="right">
+							<a href="#">添加</a>
+						</div>
+						<div class="subnavbar sliding">
+      						<div class="buttons-row">
+      							<a href="#tab1" class="button tab-link active">发放中</a>
+      							<a href="#tab2" class="button tab-link ">已领完</a>
+      							<a href="#tab3" class="button tab-link ">已过期</a>
+      							<a href="#tab4" class="button tab-link">已停用</a>
+      						</div>
+    					</div>
+					</div>
+				</div>
+				<div class="pages navbar-through toolbar-through">
+					<div data-page="tabs-animated" class="page with-subnavbar page-on-center">
+					    <div class="tabs-swipeable-wrap swiper-container swiper-container-horizontal">
+					      <div class="tabs swiper-wrapper">
+					        <div id="tab1" class="page-content infinite-scroll pull-to-refresh-content tab swiper-slide active">	
+					        	<!-- Default pull to refresh layer-->
+							    <div class="pull-to-refresh-layer">
+								    <div class="preloader"></div>
+								    <div class="pull-to-refresh-arrow"></div>
+							    </div>
+					        	 <div class="list-block media-list sortable">
+					        	 	<ul>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_discount.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_fullminus.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                	</div>
+								                	<div class="item-subtitle">满300减200</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_food.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                	</div>
+								                	<div class="item-subtitle">送30瓶啤酒外加5盘小龙虾哈哈哈哈哈哈哈</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_voucher.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                	</div>
+								                	<div class="item-subtitle">￥59.0</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 	</ul>
+					        	 </div>
+					        </div>
+					        <div id="tab2" class="page-content infinite-scroll pull-to-refresh-content tab ">
+					        	<!-- Default pull to refresh layer-->
+							    <div class="pull-to-refresh-layer">
+								    <div class="preloader"></div>
+								    <div class="pull-to-refresh-arrow"></div>
+							    </div>
+					        	<div class="list-block media-list sortable">
+					        	 	<ul>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_discount.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                		<div class="item-after">添加数量</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_fullminus.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                		<div class="item-after">添加数量</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_food.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                		<div class="item-after">添加数量</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_voucher.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                		<div class="item-after">添加数量</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 	</ul>
+					        	</div>
+					        </div>
+					        <div id="tab3" class="page-content infinite-scroll pull-to-refresh-content tab">
+					        	<!-- Default pull to refresh layer-->
+							    <div class="pull-to-refresh-layer">
+								    <div class="preloader"></div>
+								    <div class="pull-to-refresh-arrow"></div>
+							    </div>
+					        	 <div class="list-block media-list sortable">
+					        	 	<ul>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/overdue_discount.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/overdue_fullminus.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/overdue_food.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/overdue_voucher.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 	</ul>
+					        	 </div>
+					        </div>
+					        <div id="tab4" class="page-content infinite-scroll pull-to-refresh-content tab">
+					        	<!-- Default pull to refresh layer-->
+							    <div class="pull-to-refresh-layer">
+								    <div class="preloader"></div>
+								    <div class="pull-to-refresh-arrow"></div>
+							    </div>
+					        	<div class="list-block media-list sortable">
+					        	 	<ul>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_discount.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                		<div class="item-after">启用</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_fullminus.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                		<div class="item-after">启用</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_food.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                		<div class="item-after">启用</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 		<li>
+					        	 			<div class="item-content">
+								            	<div class="item-media"><img src="../../image/coupon/grant_voucher.png" width="80"></div>
+								            	<div class="item-inner">
+								                	<div class="item-title-row">
+								                		<div class="item-title">类型：折扣券</div>
+								                		<div class="item-after">启用</div>
+								                	</div>
+								                	<div class="item-subtitle">9折</div>
+								                	<div class="item-text">总计：100     剩余：90  已领取：10</div>
+								                	<div class="item-text">有效期：2017.01.12至02.12</div>
+								              </div>
+								            </div>
+					        	 		</li>
+					        	 	</ul>
+					        	</div>
+					        </div>
+					      </div>
+					    </div>
+					</div>
+					
+				</div>				
+			</div>				
+			</div>
+		</div>
+		<script src="../../js/common/common.js"></script>
+		<script type="text/javascript" src="../../js/common/framework7.js"></script>
+		<script>
+			var myApp = new Framework7();
+    		var $$ = Dom7;
+		</script>
+	</body>
+</html>
